@@ -10,7 +10,7 @@ if(!isset($_REQUEST['c'])){
     // si la variable 'c' tiene un valor se le asigna a la variable global $controller
     $controller = $_REQUEST['c'];
     // se incluye y ejecuta el archivo concatenando el valor recibido por $controller
-    require_once "controllers/".$controller."php";
+    require_once "controllers/".$controller.".php";
     // crea una instancia de la clase que se especifica en la variable $controller
     $controller = new $controller;
     // Valida que la variable 'a' tenga un valor si lo tiene lo busca y lo trae sino asigna main
